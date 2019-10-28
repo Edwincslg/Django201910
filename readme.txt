@@ -1,4 +1,4 @@
-一：用IDEdjango_team下新建项目 Django201910以及APP APP01
+一：用IDE 在django_team下新建项目 Django201910以及APP APP01
 二：templates下新做index.html登录页面
 三：做引入首页
   1.urls.py加入
@@ -18,7 +18,7 @@ urlpatterns=[
 def index(request):
     return render(request,'index.html')
 
-5.初始化sqlite数据库
+四.初始化sqlite数据库
 
 C:\django_team\Django201910>python manage.py migrate
 Operations to perform:
@@ -52,3 +52,12 @@ Superuser created successfully.
 C:\django_team\Django201910>
 
 http://127.0.0.1:8000/admin  --->用上一步创建的用户 edwin/edwin19850725登录
+
+五：本地新建项目如何上传   
+1.github上新建一个repo
+git init
+git add .
+git commit -m "initial commit"
+git remote add origin https://github.com/Edwincslg/Django201910.git  ---添加网址
+git remote remove origin--->网址添加错了，取消
+git push -u origin master  --->push本地仓库到愿吃github
